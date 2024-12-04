@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: 5e26a385a66eb4c6cb5ad4ec58407ae3
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: a3a30a5d85d6344b98c37beb60753de9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonApocalypseWasteland_01_A
+    second: {fileID: 2100000, guid: 11efe7ec94cef4f57a16193ec288c398, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonHorrorCarnival_Mat_01_A
+    second: {fileID: 2100000, guid: 1f680f699151645f5a115eb24393b567, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Glass_01
+    second: {fileID: 2100000, guid: c77ec080d5831402886e572f3f2950b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Glass_02
+    second: {fileID: 2100000, guid: bf10b038183794ec0812315f85b3f322, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Glass_03
+    second: {fileID: 2100000, guid: ed1f60377649f4c1384b79eb4abedc72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mall_Map_01
+    second: {fileID: 2100000, guid: f1b9c6341f0654374a4265bb216a765e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_01_A
+    second: {fileID: 2100000, guid: b1e72237d733e455cb5deabcddab9a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_02_A
+    second: {fileID: 2100000, guid: aa4236eeb792747f7b143a32c7cca51b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_03_A
+    second: {fileID: 2100000, guid: 33c12b543df9841ffb38633005f7bf1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_04_A
+    second: {fileID: 2100000, guid: 2b7fd30de2cf64d43bd31659a9526135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Arcade_01
+    second: {fileID: 2100000, guid: 566091ecffce14fad8faba167e2762ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Base_Blank_01
+    second: {fileID: 2100000, guid: cc89854e770e74b56915f8fe712d858e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Base_Brick_Red_01
+    second: {fileID: 2100000, guid: ca50768535e7d41f3aac8ca36c64f8eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Base_Brick_White_01
+    second: {fileID: 2100000, guid: d111812e8ae7d4edbb59f2b79f7df91d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Base_Carpet_01
+    second: {fileID: 2100000, guid: 8282aefdda2d542cfa6ff068149bb479, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Base_Concrete_Blocks_01
+    second: {fileID: 2100000, guid: 1e51a80222f9d4fbdbfdda4dde3a8342, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Base_Wood_01
+    second: {fileID: 2100000, guid: ab004a9446706429abe9fafa4da70723, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Brick_Coloured_01
+    second: {fileID: 2100000, guid: a1270411389ee4385b0596956cadf07c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Brick_Coloured_01.001
+    second: {fileID: 2100000, guid: 5aed7471297f7432785662ed0aa69ed4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Carpet_02
+    second: {fileID: 2100000, guid: 2c21e45d8ff2e4f6bb503002036dc427, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Cobblestone_01
+    second: {fileID: 2100000, guid: dea9b90b7c39c40ee810944726bf7d18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Concrete_01
+    second: {fileID: 2100000, guid: c9fa3125e65e847df80a996232b839ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Concrete_Blocks_02
+    second: {fileID: 2100000, guid: 769e5bd4f081a4233b9c80e027641bcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Concrete_Stripe_01
+    second: {fileID: 2100000, guid: b4884df7d2157480a844a9c4eebc9ffb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Lines_01
+    second: {fileID: 2100000, guid: 298fec1a1228c41eb92df7a8f4aec6e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Tile_02
+    second: {fileID: 2100000, guid: d8fcbb25699494e518d555741698aed1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Tile_04
+    second: {fileID: 2100000, guid: a66c985ca6d4d4f34bfb94687ea42cd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mat_Toilet_01
+    second: {fileID: 2100000, guid: b101cbaf2a7ca4c54bf5ce1fed6128a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Road_01
+    second: {fileID: 2100000, guid: e1dc1c16cf3ca415d8187ad860eab385, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Shutter_01
+    second: {fileID: 2100000, guid: 0b2eef3b646d04faca7a0b034ee47d4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Signs_01
+    second: {fileID: 2100000, guid: 6deb2bff3ebb446fd833ba0048df38e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Treadmill_Mat_01
+    second: {fileID: 2100000, guid: 3658109458f134c378a4fbab437649b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Wire_01
+    second: {fileID: 2100000, guid: b86bd5422570d4b1dbda6fc28a18b4c5, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonApocalypseWasteland_01_A
+    second: {fileID: 2800000, guid: 2e7d9f280502d4bb290be1349392eae9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonHorrorCarnival_Texture_01_A
+    second: {fileID: 2800000, guid: 335e9f1a1f7884f01b4b70cc245203bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Arcade_Wall_01
+    second: {fileID: 2800000, guid: c047aff97b63e4484828e3f867d64b88, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Brick_White_01
+    second: {fileID: 2800000, guid: b003363db5c154c86856b2e4e4a2916b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Carpet_01
+    second: {fileID: 2800000, guid: 9a3f4849f40394dab80004f9e1ca67a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Carpet_02
+    second: {fileID: 2800000, guid: 652a7ce1c54f94be1a165a3e905c5709, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Cladding_01
+    second: {fileID: 2800000, guid: bc50921b7424043b184c554a50e80394, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Cobblestone_01
+    second: {fileID: 2800000, guid: 0f6dcb70f806f4864afd935207d72151, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Concrete_01
+    second: {fileID: 2800000, guid: 3f5aa210b09834baabd531f7457d9b11, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Concrete_Blocks_01
+    second: {fileID: 2800000, guid: 36c047095d8af41af93d4e8ee3388c1c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Concrete_Blocks_02
+    second: {fileID: 2800000, guid: df94fa739776049d989c49730bb35035, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Concrete_Stripe_01
+    second: {fileID: 2800000, guid: d1631939726944d6abf27a8bcce9d94c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Tile_02
+    second: {fileID: 2800000, guid: 153228f228e094a458162e92c2c5cbc3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Tile_04
+    second: {fileID: 2800000, guid: 09d13acfcee694a8a8cd69c4493d9116, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Toilet_01
+    second: {fileID: 2800000, guid: 2d0c8befb3aa541f68e9db1dc2d65e36, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Building_Wood_01
+    second: {fileID: 2800000, guid: 5cb61a34d065c4d518c9fd97c3eeee6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Ground_01
+    second: {fileID: 2800000, guid: b0f3a4095c39d48d68968493e8bd6e03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Mall_Map_01
+    second: {fileID: 2800000, guid: 60e2427359e54428fa4d4658b8fe505b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Signs_01
+    second: {fileID: 2800000, guid: 39eb2017c56f54bc589e3fd07dc34700, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Texture_01_A
+    second: {fileID: 2800000, guid: a0e88caed76744abebf96c4b456b57c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Texture_02_A
+    second: {fileID: 2800000, guid: 7db2ce65440ea4e4aaa8f3ac405aeef5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Texture_04_A
+    second: {fileID: 2800000, guid: 14e61c57aa67a4ac0a2685286b7e2f7f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonShops_Treadmill_Track
+    second: {fileID: 2800000, guid: 8a4d8d7204d24407daabca13ce903d1c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonStreetRacer_Building_Texture_01_0
+    second: {fileID: 2800000, guid: 00261fbca10de41cd959a549c9592d4c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonStreetRacer_Building_Texture_02_0
+    second: {fileID: 2800000, guid: bf3436cb0178d4444a41b5376f724662, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PolygonStreetRacer_Building_Texture_03_0
+    second: {fileID: 2800000, guid: c87a1fdfce9cd40678b0d772286f737a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shutter_Transparent
+    second: {fileID: 2800000, guid: e4f9066d7eefd4666814c7d6caad59d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wire_Alpha
+    second: {fileID: 2800000, guid: 0bf3bcd77c4ad49e984ff4cfb9355334, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
