@@ -7,25 +7,24 @@ using System.Collections.Generic;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public TextMeshProUGUI heartCounterText; // UI text for hearts collected
-    public TextMeshProUGUI spunkiCounterText; // UI text for Spunki activated
-    public Button spunkiButton; // Button to activate Spunki
-    public Button destroyHeartButton; // Button to destroy hearts
-    public GameObject alternateGameObject; // Alternate object shown when no match is found
-    public string nextSceneName; // Name of the next scene
-	public GameObject objectToUnhide; // Reference to the GameObject to unhide
+    public TextMeshProUGUI heartCounterText;
+    public TextMeshProUGUI spunkiCounterText;
+    public Button spunkiButton;
+    public Button destroyHeartButton;
+    public GameObject alternateGameObject;
+    public GameObject objectToUnhide; // Reference to the GameObject to unhide
+    public string nextSceneName;
 
-    private int heartsCollected = 0; // Counter for hearts collected
-    private int spunkiCounter = 0; // Counter for Spunki activated
-    private int totalHearts = 20; // Total hearts to collect
-    private Collider currentHeart; // Reference to the currently interacted Heart
-    private Collider currentSpunki; // Reference to the currently interacted Spunki
-    private List<string> destroyedHeartNames = new List<string>(); // List of destroyed heart names
-    private List<GameObject> allSpunkiObjects; // List of all Spunki objects
+    private int heartsCollected = 0;
+    private int spunkiCounter = 0;
+    private int totalHearts = 6;
+    private Collider currentHeart;
+    private Collider currentSpunki;
+    private List<string> destroyedHeartNames = new List<string>();
+    private List<GameObject> allSpunkiObjects;
 
     private void Start()
     {
-        // Initialize Spunki list
         allSpunkiObjects = new List<GameObject>(GameObject.FindGameObjectsWithTag("Spunki"));
 
         spunkiButton.gameObject.SetActive(false);
@@ -35,7 +34,7 @@ public class PlayerInteraction : MonoBehaviour
         destroyHeartButton.onClick.AddListener(DestroyHeart);
         spunkiButton.onClick.AddListener(ActivateSpunkiAudio);
 
-        // Initialize UI
+        // Initialize counters in the UI
         heartCounterText.text = $"{heartsCollected}/{totalHearts}";
         spunkiCounterText.text = $"{spunkiCounter}/{allSpunkiObjects.Count}";
     }
@@ -44,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (other.CompareTag("Heart"))
         {
-            currentHeart = other; 
+            currentHeart = other;
             destroyHeartButton.gameObject.SetActive(true);
         }
         else if (other.CompareTag("Spunki"))
@@ -83,16 +82,13 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (currentHeart != null)
         {
-            destroyedHeartNames.Add(currentHeart.gameObject.name); // Save the destroyed heart's name
-            heartsCollected++; // Increment the heart counter
-
-            // Update the UI to display hearts collected in the format "1/20"
+            destroyedHeartNames.Add(currentHeart.gameObject.name);
+            heartsCollected++;
             heartCounterText.text = $"{heartsCollected}/{totalHearts}";
 
-            Destroy(currentHeart.gameObject); // Destroy the Heart GameObject
-            currentHeart = null; // Clear the current Heart reference
-
-            destroyHeartButton.gameObject.SetActive(false); // Hide the destroy button
+            Destroy(currentHeart.gameObject);
+            currentHeart = null;
+            destroyHeartButton.gameObject.SetActive(false);
         }
     }
 
@@ -109,19 +105,33 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     audioSource.enabled = true;
 
-                    spunkiCounter++; // Increment the Spunki counter
+                    spunkiCounter++;
                     spunkiCounterText.text = $"{spunkiCounter}/{allSpunkiObjects.Count}";
 
-                    if (spunkiRenderer != null && spunkiRenderer.material != null)
-                    {
-                        Material material = spunkiRenderer.material;
-                        material.EnableKeyword("_EMISSION");
-                        material.SetColor("_EmissionColor", Color.yellow * 2.0f);
-                    }
+                    if (spunkiRenderer != null)
+{
+    // Get all materials on the Renderer
+    Material[] materials = spunkiRenderer.materials;
+
+    // Loop through all materials
+    foreach (Material material in materials)
+    {
+        // Check if the material has an "_Color" property (Albedo color)
+        if (material.HasProperty("_Color"))
+        {
+            // Get the Albedo color of the material
+            Color albedoColor = material.GetColor("_Color");
+
+            // Enable emission and set its color to match the Albedo color
+            material.EnableKeyword("_EMISSION");
+            material.SetColor("_EmissionColor", albedoColor);
+        }
+    }
+}
+
 
                     spunkiButton.gameObject.SetActive(false);
 
-                    // Check if all Spunki objects have activated their audio
                     CheckAllSpunkiActivated();
                 }
             }
@@ -129,18 +139,18 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     private void CheckAllSpunkiActivated()
-{
-    if (spunkiCounter == allSpunkiObjects.Count)
     {
-        // Unhide the specified GameObject
-        if (objectToUnhide != null)
+        if (spunkiCounter == allSpunkiObjects.Count)
         {
-            objectToUnhide.SetActive(true);
-        }
+            // Unhide the specified GameObject
+            if (objectToUnhide != null)
+            {
+                objectToUnhide.SetActive(true);
+            }
 
-        StartCoroutine(LoadNextSceneAfterDelay(4f)); // Load the next scene after a short delay
+            StartCoroutine(LoadNextSceneAfterDelay(2f));
+        }
     }
-}
 
     private IEnumerator LoadNextSceneAfterDelay(float delay)
     {
